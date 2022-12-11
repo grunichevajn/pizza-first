@@ -1,0 +1,96 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.header_logo-img {
+    width: 100px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background: #126e40;
+    border-radius: 0 0 30px 30px;
+}
+
+.header_description {
+    color: rgb(99, 49, 2);
+    font-family: 'American Typewriter', serif;
+
+}
+
+.header_description-organization {
+    font-size: 20px;
+    margin: 10px 0 5px 0;
+    text-align: center;
+}
+
+.header_description-lozyng,
+.header_description-tel {
+    text-align: right;
+    margin-right: 8px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    background: #25764d;
+    padding: 4px 0;
+    border-radius: 6px;
+    margin: 16px 16px 16px 16px;
+}
+
+.navigation > div {
+    padding: 3px 6px;
+    border-radius: 6px;
+}
+
+.navigation > div:hover {
+    background: rgba(218, 186, 99, 0.5);
+}
+.about-page_group {
+    display: flex;
+    background: #25764d;
+    padding: 5px 5px 5px 5px;
+    border-radius: 30px;
+    margin: 16px;
+    overflow: hidden;
+}
+
+.about-page_group--orange {
+    background: linear-gradient(180deg, #25764d 10%, rgb(70, 48, 28) 90%);
+}
+
+.about-page_description {
+    width: 100%;
+    padding: 10px;
+}
+
+.about-page_image-with-info-img,
+.about-page_image-with-info {
+    width: 300px;
+    border-radius: 30px;
+    opacity: 0.8;
+}
+
+.about-page {
+    display: none;
+    background:rgb(104, 74, 46);
+}
+
+.page-show.page {
+    display: block;
+}
+
+.main-container {
+    background: rgb(104, 74, 46);
+}
+
+.about-page_image-with-info-text {
+    padding: 10px;
+}
+
+.history-page {
+    display: none;
+}
