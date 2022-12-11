@@ -94,3 +94,10 @@ body {
 .history-page {
     display: none;
 }
+
+@media (max-width: 550px) {
+    .about-page_image-with-info-img,
+    .about-page_image-with-info {
+        width: 150px;
+    }
+}
