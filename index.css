@@ -49,6 +49,11 @@ body {
 .navigation > div:hover {
     background: rgba(218, 186, 99, 0.5);
 }
+
+.navigation_active {
+    background: rgba(218, 186, 99, 0.5);
+}
+
 .about-page_group {
     display: flex;
     background: #25764d;
