@@ -10,12 +10,12 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    background: #126e40;
+    background: linear-gradient(0deg, #25764d 10%, rgb(70, 48, 28) 90%);
     border-radius: 0 0 30px 30px;
 }
 
 .header_description {
-    color: rgb(99, 49, 2);
+    color: rgb(143, 76, 13);
     font-family: 'American Typewriter', serif;
 
 }
@@ -106,3 +106,21 @@ body {
         width: 150px;
     }
 }
+.about-page_group--second-block {
+    background: linear-gradient(0deg, #25764d 10%, rgb(70, 48, 28) 90%);
+}
+
+.about-page_group--third-block {
+    background:linear-gradient(180deg, #25764d 10%, rgb(70, 48, 28) 90%);
+}
+
+.about-page_image-with-info-img--mini-img {
+    width: 150px;
+    height: 150px;
+}
+.page-history-page_image-with-info-img {
+    height: 150px;
+    margin: 16px;
+    border-radius:30px;
+}
+
