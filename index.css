@@ -1,6 +1,8 @@
 body {
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
+    min-height: 100%;
+    max-width: 1280px;
 }
 
 .header_logo-img {
@@ -12,10 +14,13 @@ body {
     justify-content: space-between;
     background: linear-gradient(0deg, #25764d 10%, rgb(70, 48, 28) 90%);
     border-radius: 0 0 30px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .header_description {
-    color: rgb(143, 76, 13);
+    color: rgb(204, 139, 19);
     font-family: 'American Typewriter', serif;
 
 }
@@ -39,6 +44,9 @@ body {
     padding: 4px 0;
     border-radius: 6px;
     margin: 16px 16px 16px 16px;
+    position: sticky;
+    top: 104px;
+    z-index: 10;
 }
 
 .navigation > div {
@@ -89,7 +97,7 @@ body {
 }
 
 .main-container {
-    background: rgb(104, 74, 46);
+    background: linear-gradient(0deg, #25764d 10%, rgb(70, 48, 28) 90%);
 }
 
 .about-page_image-with-info-text {
@@ -100,12 +108,6 @@ body {
     display: none;
 }
 
-@media (max-width: 550px) {
-    .about-page_image-with-info-img,
-    .about-page_image-with-info {
-        width: 150px;
-    }
-}
 .about-page_group--second-block {
     background: linear-gradient(0deg, #25764d 10%, rgb(70, 48, 28) 90%);
 }
@@ -119,8 +121,158 @@ body {
     height: 150px;
 }
 .page-history-page_image-with-info-img {
-    height: 150px;
+    width: 200px;
+    height: 200px;
     margin: 16px;
     border-radius:30px;
+}
+
+.history-page_image-with-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16x;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.history-page_description-text {
+    width: 300px;
+    background: rgb(184, 140, 62);
+    padding: 6px;
+    border-radius: 9px;
+    margin: 0 8px;
+    opacity: 0.7;
+    position: relative;
+}
+
+.history-page_description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.history-page_description > div {
+    margin-top: 8px;
+}
+
+.test {
+    width:50px;
+    height: 50px;
+    background: url("assets/images/pizza3.jpg") center / contain no-repeat;
+    position: absolute;
+    top: 10px;
+    transition: all 1s;
+}
+
+.test:hover {
+    top: 100px;
+    background: green;
+}
+
+.product-page{
+    display: none;
+}
+
+.product-page__product-card {
+    width: 250px;
+    height: 380px;
+    border-radius: 9px;
+    box-shadow: 0 0 3px 3px #16462e;
+    margin: 16px;
+    position: relative;
+    background: rgba(218, 186, 99, 0.5);
+}
+
+.product-page__product-card:hover{
+    background: rgba(218, 186, 99, 0.6);
+}
+
+.product-page__product-card-img {
+    width: 220px;
+    height: 150px;
+    margin: 8px 16px;
+    border-radius: 9px;
+}
+
+.product-page__product-card-description {
+    width: 150px;
+    margin: 8px 16px;
+}
+
+.product-page__product-card-button {
+    color: rgb(68, 46, 5);
+    text-align: center;
+    padding: 8px 16px;
+    background: #1c7435;
+    margin: 8px 16px;
+    position: absolute;
+    bottom: 3px;
+    right: -5px;
+    left: -5px;
+    border-radius: 9px;
+}
+
+.product-page__product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-page__product-card-button:hover{
+    background: rgba(244, 248, 2, 0.904);
+}
+
+.product-page__button {
+    height: 40px;
+    width: 100px;
+    border-radius: 6px;
+    background: green;
+    color: rgb(68, 46, 5);
+    border: 1px solid #000;
+    margin: 8px;
+}
+
+.product-page__product-card-helper {
+    position: absolute;
+    z-index: 2;
+    right: 15px;
+    top: 160px;
+}
+
+.product-page__product-card-helper:hover .product-page__product-card-helper-description {
+    display: flex;
+}
+
+.product-page__product-card-helper-description {
+    display: none;
+    color: #1c7435;
+    opacity: 0.7;
+    border-radius: 3px;
+    padding: 4px;
+    position: absolute;
+    right: -8px;
+    top: 35px;
+    background: #fff;
+}
+
+.product-page__product-card-helper-icon {
+    height: 30px;
+    width: 30px;
+}
+
+.product-page__product-card-helper-description-ingridient {
+    height: 20px;
+    width: 20px;
+}
+
+@media (max-width: 550px) {
+    .about-page_image-with-info-img,
+    .about-page_image-with-info {
+        width: 150px;
+    }
+
+    .page-history-page_image-with-info-img {
+        width: 100px;
+    }
 }
 
