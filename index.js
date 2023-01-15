@@ -29,6 +29,10 @@ var ingridients = {
         img: "assets/images/tomato.png",
         title: "помидор"
     },
+    salami: {
+        img: "assets/images/salami.png",
+        title: "салями"
+    }
 }
 
 var cards = [
@@ -44,7 +48,7 @@ var cards = [
         title: "Пипирони",
         img: "assets/images/product2.jpeg",
         description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti veniam culpa, ab cum tempore sapiente. Quis esse perferendis quae.",
-        sostav: ["cucumber", "cucumber", "cucumber", "tomato", "cucumber"]
+        sostav: ["salami", "tomato", "cucumber"]
     },
     {
         id: 3,

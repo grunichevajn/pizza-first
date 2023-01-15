@@ -16,6 +16,7 @@ body {
     border-radius: 0 0 30px 30px;
     position: sticky;
     top: 0;
+    height: 122px;
     z-index: 10;
 }
 
@@ -42,10 +43,10 @@ body {
     justify-content: space-around;
     background: #25764d;
     padding: 4px 0;
-    border-radius: 6px;
+    border-radius: 15px;
     margin: 16px 16px 16px 16px;
     position: sticky;
-    top: 104px;
+    top: 84px;
     z-index: 10;
 }
 
@@ -60,6 +61,29 @@ body {
 
 .navigation_active {
     background: rgba(218, 186, 99, 0.5);
+}
+
+.navigation_contacts:hover .navigation_contacts-modal {
+    visibility: visible;
+    right: 0;
+    top: 40px;
+}
+
+.navigation_contacts-modal {
+    top: 40px;
+    position: absolute;
+    visibility: hidden;
+    width: 200px;
+    height: 200px;
+    background: rgb(169, 110, 2);
+    right: -400px;
+    transition: all 600ms;
+    border-radius: 9px;
+    opacity: 0.95;
+}
+
+.navigation_contacts-modal-inner-wrapper {
+    padding: 6px;
 }
 
 .about-page_group {
@@ -89,7 +113,6 @@ body {
 
 .about-page {
     display: none;
-    background:rgb(104, 74, 46);
 }
 
 .page-show.page {
@@ -141,7 +164,7 @@ body {
     padding: 6px;
     border-radius: 9px;
     margin: 0 8px;
-    opacity: 0.7;
+    opacity: 0.85;
     position: relative;
 }
 
@@ -262,7 +285,7 @@ body {
 
 .product-page__product-card-helper-description-ingridient {
     height: 20px;
-    width: 20px;
+    padding: 0 3px;
 }
 
 @media (max-width: 550px) {
